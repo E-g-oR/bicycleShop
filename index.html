@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streester Nathan | Интернет-магазин велосипедов и запчастей.</title>
+  <meta property="og:title" content="Удобный и быстрый. Твой идеал для покорения города.">
+  <!-- og:title - заглавие страницы, он же тайтл. Можете скопировать из тега title. -->
+  <meta property="og:site_name" content="">
+  <!-- og:site_name - название сайта. -->
+  <meta property="og:url" content="myStreester.my">
+  <!-- og:url - ссылка страницы, где вы добавляете этот код. 
+          Если это однастраничник, то это просто ссылка на главную сайта. 
+          Если сайт на CMS или самописный и у него много страниц, 
+          то вам придется для каждой указать свой тег, со своей ссылкой. -->
+  <meta property="og:description"
+    content="Streester Nathan | Интернет-магазин велосипедов и запчастей. Городские, гоночные и горные велосипеды.">
+  <!-- og:description - описание страницы. 
+          Можете скопировать из тега description для страницы, 
+          на которую добавляете теги. -->
+  <meta property="og:image" content="img/hero_bg.jpg">
+  <!-- og:image - ссылка на картинку, что характеризует страницу. 
+          Можете указать ссылку на лого сайта, или нарисовать 
+          конкретную картинку для этих целей. -->
+  <link rel="shortcut icon" href="img/icons/logo_1.png" type="image/x-icon">
+  <link rel="icon" href="img/icons/logo_1.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="themes/easydropdown.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header hero section">
+    <div class="container">
+      <!-- * top navigation bar -->
+      <div class="header__top-nav top-nav">
+        <div class="top-nav__logo logo">
+          <a class="logo__link" href="#"><img src="/img/logo_1.png" alt="logo"></a>
+        </div>
+        <form class="top-nav__form search-form" action="#">
+          <input class="search-form__input" type="text">
+        </form>
+        <!-- * top bar controllers (language switch, cart and menu) -->
+        <div class="top-nav__controls">
+          <div class="top-nav__language-controls switch-language">
+            <a class="language-control language_ru" href="#">ru</a>
+            <a class="language-control language_en" href="#">en</a>
+          </div>
+          <!-- * buttons -->
+          <div class="top-nav__buttons buttons">
+            <button class="buttons__cart cart top-nav__button">
+              <img src="img/cart.svg" alt="">
+            </button>
+            <!-- * menu button -->
+            <button class="buttons__menu-btn menu-btn hamburger-menu  top-nav__button">
+              <span class="menu-btn__line menu-btn__line_1"></span>
+              <span class="menu-btn__line menu-btn__line_2"></span>
+              <span class="menu-btn__line menu-btn__line_3"></span>
+            </button>
+            <!-- * menu button END -->
+
+          </div>
+          <!-- * buttons END -->
+
+          <div class="top-nav__menu menu">
+            <menu class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">Road series</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Street series</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Mountain series</a></li>
+            </menu>
+            <nav class="menu__nav nav">
+              <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            </nav>
+            <ul class="menu__socials socials">
+              <li class="socials__item"><a class="socials__link" href="#"><img src="img/icons/insta.svg" alt=""></a>
+              </li>
+              <li class="socials__item"><a class="socials__link" href="#"><img src="img/icons/facebook.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- * top bar controllers (language switch, cart and menu) END-->
+
+      </div>
+      <!-- * top navigation bar END-->
+
+      <div class="header__offer offer">
+        <h2 class="offer__caption">Streester nathan</h2>
+        <h1 class="offer__title">Удобный и быстрый. <br>Твой идеал для покорения города.</h1>
+        <div class="offer__button">
+          <a class="offer__link" href="#">Узнать больше</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="categories section">
+    <div class="slider">
+      <!-- Slider main container -->
+      <div class="categories-slider swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="categories-slider__wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="categories-slider__slide category swiper-slide">
+            <div class="category__link">
+              <img alt="" src="img/roadSeries.png">
+            </div>
+          </div>
+          <div class="categories-slider__slide category swiper-slide">
+            <div class="category__link">
+              <img alt="img/" src="img/offroadSeries.png">
+            </div>
+          </div>
+          <div class="categories-slider__slide category swiper-slide">
+            <div class="category__link">
+              <img alt="img/" src="img/streetSeries.png">
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="slider__prev slider-btn swiper-button-prev"></div>
+        <div class="slider__next slider-btn swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+  </footer>
+</body>
+
+</html>
