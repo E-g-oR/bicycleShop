@@ -89,19 +89,13 @@ body {
         height: 100%;
         top: 0;
         left: 0;
-        // background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.3), transparent, rgba(0, 0, 0, 0.3));
     }
 }
 .category {
     transform: skewX(-25deg);
     overflow: hidden;
-    // background-color: rgb(24, 204, 36);
 }
 .category__link {
-    // max-height: 300px;
-    // padding-top: 230px;
-    // padding-bottom: 230px;
-    // background-image: url(../img/roadSeries.png);
     text-align: center;
     & .category__bg {
         max-width: 100%;
@@ -111,6 +105,24 @@ body {
         object-fit: cover;
         object-position: center;
     }
+}
+.category__content {
+    position: absolute;
+    transform: skewX(25deg) translate(-34%, -40%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+.category__img {
+    max-width: 380px;
+    margin-bottom: 20px;
+}
+.category__title {
+    color: transparent;
+    font-weight: 900;
+    font-size: 34px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -129,9 +141,7 @@ body {
 }
 .swiper-button-prev::before {
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    // background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1), transparent);
 }
 .swiper-button-next::before {
     background: linear-gradient(-90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    // background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1), transparent);
 }
