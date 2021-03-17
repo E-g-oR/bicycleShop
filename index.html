@@ -107,6 +107,9 @@
   </header>
 
   <section class="categories section">
+    <div class="container">
+      <h2 class=" categories__title section__title">Категории</h2>
+    </div>
     <div class="slider">
       <!-- Slider main container -->
       <div class="categories-slider swiper-container">
@@ -114,23 +117,17 @@
         <div class="categories-slider__wrapper swiper-wrapper">
           <!-- Slides -->
           <div class="categories-slider__slide category swiper-slide">
-            <div class="category__link">
-              <img alt="" src="img/roadSeries.png">
-            </div>
-          </div>
-          <div class="categories-slider__slide category swiper-slide">
-            <div class="category__link">
-              <img alt="img/" src="img/offroadSeries.png">
-            </div>
-          </div>
-          <div class="categories-slider__slide category swiper-slide">
-            <div class="category__link">
-              <img alt="img/" src="img/streetSeries.png">
-            </div>
+            <a class="category__link" href="#">
+              <div class="category__content">
+                <img class="category__img" src="" alt="">
+                <h3 class="category__title">Road series</h3>
+              </div>
+              <img class="category__bg" alt="" src="img/roadSeries.jpg">
+            </a>
           </div>
         </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
 
         <!-- If we need navigation buttons -->
         <div class="slider__prev slider-btn swiper-button-prev"></div>
@@ -140,12 +137,6 @@
         <!-- <div class="swiper-scrollbar"></div> -->
       </div>
     </div>
-  </section>
-
-  <section class="new-section">
-    <h1>
-      hello world
-    </h1>
   </section>
 
   <footer class="footer">
