@@ -286,14 +286,44 @@
     <div class="container">
       <form action="#" class="mailing__form form">
         <h4 class="mailing__title">Подпишитесь на новостную рассылку</h4>
-        <input class="mailing__input" type="text" id="email" placeholder="Email">
-        <label for="email">Email</label>
-        <button class="mailing__submit" type="submit">Подписаться</button>
+        <div class="input-box">
+          <input class="mailing__input" type="text" id="email" placeholder="Email">
+          <label class="mailing__input_label" for="email">Email</label>
+        </div>
+        <button class="mailing__submit button button_solid" type="submit">Подписаться</button>
       </form>
     </div>
   </section>
 
   <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="top-nav__logo logo">
+          <a class="logo__link" href="#"><img src="img/logo_1.png" alt="logo"></a>
+        </div>
+        <menu class="menu__list">
+          <h6 class="footer__menu-title">Категории</h6>
+          <li class="menu__item"><a class="menu__link" href="#">Road series</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Street series</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Mountain series</a></li>
+        </menu>
+        <nav class="menu__nav nav">
+          <h6 class="footer__menu-title">Информация</h6>
+          <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+        </nav>
+        <ul class="menu__socials socials">
+          <li class="socials__item"><a class="socials__link" href="#"><img src="img/icons/insta.svg" alt=""></a>
+          </li>
+          <li class="socials__item"><a class="socials__link" href="#"><img src="img/icons/facebook.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_copyright">
+        <small>© STREETSTER — Все права защищены</small>
+      </div>
+    </div>
   </footer>
 </body>
 
