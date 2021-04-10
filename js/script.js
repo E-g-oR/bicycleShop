@@ -21,11 +21,13 @@ const swiper = new Swiper('.swiper-container', {
       320: {
          spaceBetween: 30,
          slidesPerView: 0.8,
+         // navigation: undefined
       },
       // when window width is >= 480px
       730: {
          spaceBetween: 50,
          slidesPerView: 1,
+         // pagination: undefined
       },
       // when window width is >= 640px
       900: {
