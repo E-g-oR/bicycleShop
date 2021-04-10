@@ -305,6 +305,7 @@ body {
 .news__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .news__item {
     max-width: 340px;

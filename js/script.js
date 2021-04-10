@@ -20,4 +20,12 @@ const swiper = new Swiper('.swiper-container', {
 });
 const hamburgerMenu = document.querySelector('.hamburger-menu'),
    switchLanguage = document.querySelector('.switch-language'),
-   topNavMenu = document.querySelector('.top-nav__menu');
+   buttons = document.querySelector('.buttons'),
+   topNavMenu = document.querySelector('.top-nav__menu'),
+   topNavControls = document.querySelector('.top-nav__controls');
+
+hamburgerMenu.addEventListener('click', () => {
+   hamburgerMenu.classList.toggle('active');
+   topNavMenu.classList.toggle('active');
+   topNavControls.classList.toggle('active');
+});
