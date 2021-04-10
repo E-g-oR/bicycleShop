@@ -16,7 +16,23 @@ const swiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
    },
-
+   breakpoints: {
+      // when window width is >= 320px
+      320: {
+         spaceBetween: 30,
+         slidesPerView: 0.8,
+      },
+      // when window width is >= 480px
+      730: {
+         spaceBetween: 50,
+         slidesPerView: 1,
+      },
+      // when window width is >= 640px
+      900: {
+         spaceBetween: 70,
+         slidesPerView: 1.5
+      }
+   }
 });
 const hamburgerMenu = document.querySelector('.hamburger-menu'),
    switchLanguage = document.querySelector('.switch-language'),
