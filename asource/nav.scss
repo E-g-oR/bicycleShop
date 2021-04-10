@@ -19,6 +19,7 @@
 }
 
 .search-form__input {
+   width: 100%;
    padding: 5px 35px;
    border-radius: 30px;
    background-color: #fff;
@@ -31,7 +32,7 @@
 .top-nav__controls {
    display: flex;
    position: relative;
-   padding: 25px 55px;
+   padding: 35px;
 }
 .top-nav__button {
    display: flex;
@@ -42,10 +43,13 @@
 }
 
 .switch-language {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
 }
 .language-control {
    font-size: 24px;
-   font-weight: 300;
+   font-weight: 100;
    text-transform: uppercase;
    line-height: 40px;
 }
@@ -55,6 +59,7 @@
 }
 .top-nav__buttons {
    display: flex;
+   margin-left: 35px;
 }
 .buttons {
 }
@@ -89,10 +94,12 @@
 .top-nav__menu {
 }
 .menu {
-   display: none; // TODO временно
-
+   // display: none; // TODO временно
+   padding: 20px;
+   width: 100%;
+   left: 0;
    position: absolute;
-   top: 50px;
+   top: 80px;
    background-color: #fff;
    color: #000;
 }
@@ -101,20 +108,33 @@
 .menu__item {
 }
 .menu__link {
+   display: block;
+   float: none;
+   font-size: 20px;
+   padding: 5px 0 5px 15px;
+   text-transform: uppercase;
 }
 .menu__nav {
 }
 .nav {
 }
 .nav__item {
+   float: none;
+   padding: 2px 0 2px 15px;
 }
 .nav__link {
 }
 .menu__socials {
+   margin-left: 15px;
 }
 .socials {
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 .socials__item {
+   margin-right: 17px;
 }
 .socials__link {
 }

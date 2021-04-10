@@ -1,6 +1,7 @@
 const swiper = new Swiper('.swiper-container', {
    // Optional parameters
    // direction: 'vertical',
+   autoheight: false,
    loop: true,
    slidesPerView: 1.5,
    spaceBetween: 70,
@@ -17,3 +18,6 @@ const swiper = new Swiper('.swiper-container', {
    },
 
 });
+const hamburgerMenu = document.querySelector('.hamburger-menu'),
+   switchLanguage = document.querySelector('.switch-language'),
+   topNavMenu = document.querySelector('.top-nav__menu');

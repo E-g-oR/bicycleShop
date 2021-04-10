@@ -242,12 +242,12 @@ body {
     text-align: center;
 }
 .advantages__list {
-    margin-top: 130px;
 }
 .advantages-list {
+    margin-top: 30px;
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .advantages-list__item {
@@ -256,9 +256,10 @@ body {
     padding: 20px 25px;
     background-color: #f2f2f2;
     text-align: center;
+    margin: 100px 20px 0;
 }
-.advantage {
-}
+// .advantage {
+// }
 .advantage__icon {
     margin: -100px 0 0 0;
 }
@@ -266,5 +267,54 @@ body {
     font-size: 22px;
     margin-bottom: 10px;
 }
-.advantage__text {
+// .advantage__text {
+// }
+
+// ! --------------------------
+// .section {
+// }
+// .news {
+// }
+// .container {
+// }
+.news__title {
+    text-align: center;
+}
+// .section__title {
+// }
+.news__list {
+    display: flex;
+    justify-content: space-between;
+}
+.news__item {
+    max-width: 340px;
+}
+.news__article {
+}
+.article {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+.article__img {
+}
+.article__text {
+    padding: 15px;
+}
+.article__title {
+    margin-bottom: 7px;
+}
+.article__button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    border: 3px solid #000;
+    transition: 0.2s;
+    &:hover {
+        background-color: #000;
+        color: #f2f2f2;
+    }
 }
