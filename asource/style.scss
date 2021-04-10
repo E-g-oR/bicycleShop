@@ -134,8 +134,8 @@ body {
 .category__content {
     position: absolute;
     transform: skewX(25deg) translate(-34%, -40%);
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 48%;
     z-index: 1;
 }
 .category__img {
@@ -215,6 +215,7 @@ body {
     grid-row: span 2;
     & img {
         max-width: 500px;
+        width: 100%;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -421,6 +422,29 @@ body {
     .footer_copyright {
         margin-top: 50px;
         text-align: center;
-        color: #484848;
+        color: #6f6f6f;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .category__img {
+        max-width: 300px;
+    }
+    .category__content {
+        width: 100%;
+        left: 40%;
+    }
+    .swiper-container {
+        height: 300px;
+    }
+    .category__link .category__bg {
+        max-width: fit-content;
+        width: 160%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        grid-template: repeat(4, 210px) / repeat(2, 1fr);
     }
 }

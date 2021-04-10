@@ -17,7 +17,11 @@
 }
 .search-form {
 }
-
+.search-form__label {
+   position: absolute;
+   opacity: 0;
+   pointer-events: none;
+}
 .search-form__input {
    width: 100%;
    padding: 5px 35px;
@@ -33,6 +37,14 @@
    display: flex;
    position: relative;
    padding: 35px;
+   transition: 0.2s;
+   &.active {
+      background-color: #fff;
+      & .switch-language,
+      & .top-nav__buttons {
+         filter: invert(1);
+      }
+   }
 }
 .top-nav__button {
    display: flex;
@@ -60,6 +72,7 @@
 .top-nav__buttons {
    display: flex;
    margin-left: 35px;
+   transition: 0.2s;
 }
 .buttons {
 }
@@ -71,11 +84,7 @@
 }
 .buttons__menu-btn {
 }
-.menu-btn {
-   padding: 7px;
-   flex-direction: column;
-   justify-content: space-around;
-}
+
 .hamburger-menu {
 }
 .menu-btn__line {
@@ -84,6 +93,24 @@
    height: 2px;
    border-radius: 5px;
    background-color: rgb(255, 255, 255);
+   // transform-origin: left;
+   transition: 0.2s;
+}
+.menu-btn {
+   padding: 7px;
+   flex-direction: column;
+   justify-content: space-around;
+   &.active {
+      .menu-btn__line_1 {
+         transform: translateY(8.5px) rotate(45deg);
+      }
+      .menu-btn__line_2 {
+         opacity: 0;
+      }
+      .menu-btn__line_3 {
+         transform: translateY(-8.5px) rotate(-45deg);
+      }
+   }
 }
 .menu-btn__line_1 {
 }
@@ -96,12 +123,19 @@
 .menu {
    // display: none; // TODO временно
    padding: 20px;
+   transition: 2s;
+   max-height: 0;
+   overflow: hidden;
    width: 100%;
    left: 0;
    position: absolute;
    top: 80px;
    background-color: #fff;
    color: #000;
+   &.active {
+      // padding: 20px;
+      max-height: 280px;
+   }
 }
 .menu__list {
 }

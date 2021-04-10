@@ -23,6 +23,8 @@
   <!-- og:image - ссылка на картинку, что характеризует страницу. 
           Можете указать ссылку на лого сайта, или нарисовать 
           конкретную картинку для этих целей. -->
+  <meta name="description"
+    content="Streester Nathan | Интернет-магазин велосипедов и запчастей. Городские, гоночные и горные велосипеды.">
   <link rel="shortcut icon" href="img/icons/logo_1.png" type="image/x-icon">
   <link rel="icon" href="img/icons/logo_1.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -48,7 +50,8 @@
           <a class="logo__link" href="#"><img src="img/logo_1.png" alt="logo"></a>
         </div>
         <form class="top-nav__form search-form" action="#">
-          <input class="search-form__input" type="text">
+          <input class="search-form__input" type="text" id="search">
+          <label class="search-form__label" for="search">Поиск</label>
         </form>
         <!-- * top bar controllers (language switch, cart and menu) -->
         <div class="top-nav__controls">
@@ -58,11 +61,11 @@
           </div>
           <!-- * buttons -->
           <div class="top-nav__buttons buttons">
-            <button class="buttons__cart cart top-nav__button">
+            <button class="buttons__cart cart top-nav__button" aria-label="cart button">
               <img src="img/cart.svg" alt="">
             </button>
             <!-- * menu button -->
-            <button class="buttons__menu-btn menu-btn hamburger-menu  top-nav__button">
+            <button class="buttons__menu-btn menu-btn hamburger-menu  top-nav__button" aria-label="menu button">
               <span class="menu-btn__line menu-btn__line_1"></span>
               <span class="menu-btn__line menu-btn__line_2"></span>
               <span class="menu-btn__line menu-btn__line_3"></span>
@@ -301,14 +304,14 @@
         <div class="top-nav__logo logo">
           <a class="logo__link" href="#"><img src="img/logo_1.png" alt="logo"></a>
         </div>
-        <menu class="menu__list">
-          <h6 class="footer__menu-title">Категории</h6>
+        <nav class="menu__list">
+          <h5 class="footer__menu-title">Категории</h5>
           <li class="menu__item"><a class="menu__link" href="#">Road series</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Street series</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Mountain series</a></li>
-        </menu>
+        </nav>
         <nav class="menu__nav nav">
-          <h6 class="footer__menu-title">Информация</h6>
+          <h5 class="footer__menu-title">Информация</h5>
           <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
           <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
