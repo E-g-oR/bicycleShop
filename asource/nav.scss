@@ -37,7 +37,7 @@
    display: flex;
    position: relative;
    padding: 35px;
-   transition: 0.2s;
+   transition: 0.5s;
    &.active {
       background-color: #fff;
       & .switch-language,
@@ -122,8 +122,8 @@
 }
 .menu {
    // display: none; // TODO временно
-   padding: 20px;
-   transition: 2s;
+   // padding: 20px;
+   transition: 0.5s;
    max-height: 0;
    overflow: hidden;
    width: 100%;
@@ -137,7 +137,10 @@
       max-height: 280px;
    }
 }
-.menu__list {
+.menu__list,
+.menu__nav,
+.socials {
+   margin: 20px;
 }
 .menu__item {
 }
@@ -148,8 +151,7 @@
    padding: 5px 0 5px 15px;
    text-transform: uppercase;
 }
-.menu__nav {
-}
+
 .nav {
 }
 .nav__item {
@@ -158,13 +160,11 @@
 }
 .nav__link {
 }
-.menu__socials {
-   margin-left: 15px;
-}
 .socials {
    display: flex;
    align-items: center;
    margin-top: 20px;
+   margin-left: 35px;
    margin-bottom: 20px;
 }
 .socials__item {
