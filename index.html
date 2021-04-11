@@ -124,8 +124,11 @@
           <div class="categories-slider__slide category swiper-slide">
             <a class="category__link" href="#">
               <div class="category__content">
-                <img width="100%" max-width="380px" max-height="180px" class="category__img"
-                  src="img/bike_Nathan_small.webp" alt="Offroad series">
+                <picture>
+                  <source srcset="img/bike_offroad.webp" type="image/webp" media="(min-width:750px)" width="380px">
+                  <source srcset="img/bike_offroad_280.webp" type="image/webp" media="(max-width:750px)" width="280px">
+                  <img max-height="180px" class="category__img" src="img/bike_offroad.webp" alt="Offroad series">
+                </picture>
                 <h3 class="category__title">Offroad series</h3>
               </div>
               <img class="category__bg" alt="" src="img/category_offroad_bg.webp">
@@ -134,8 +137,11 @@
           <div class="categories-slider__slide category swiper-slide">
             <a class="category__link" href="#">
               <div class="category__content">
-                <img width="100%" max-width="380px" max-height="180px" class="category__img"
-                  src="img/bike_Backerstreet.webp" alt="Road series">
+                <picture>
+                  <source srcset="img/bike_road.webp" type="image/webp" media="(min-width:750px)" width="380px">
+                  <source srcset="img/bike_road_280.webp" type="image/webp" media="(max-width:750px)" width="280px">
+                  <img max-height="180px" class="category__img" src="img/bike_road.webp" alt="Road series">
+                </picture>
                 <h3 class="category__title">Road series</h3>
               </div>
               <img class="category__bg" alt="" src="img/category_road_bg.webp">
@@ -144,8 +150,11 @@
           <div class="categories-slider__slide category swiper-slide">
             <a class="category__link" href="#">
               <div class="category__content">
-                <img width="100%" max-width="380px" max-height="180px" class="category__img"
-                  src="img/bike_Broadway.webp" alt="Street series">
+                <picture>
+                  <source srcset="img/bike_street.webp" type="image/webp" media="(min-width:750px)" width="380px">
+                  <source srcset="img/bike_street_280.webp" type="image/webp" media="(max-width:750px)" width="280px">
+                  <img max-height="180px" class="category__img" src="img/bike_street.webp" alt="Street series">
+                </picture>
                 <h3 class="category__title">Street series</h3>
               </div>
               <img class="category__bg" alt="" src="img/category_street_bg.webp">
@@ -165,7 +174,7 @@
     </div>
   </section>
 
-  <section class="top-tated section">
+  <section class="top-rated section">
     <div class="container">
       <h2 class="section__title top-rated__title">Избранные товары</h2>
       <ul class="top-rated__list grid">
@@ -175,31 +184,31 @@
               <h3 class="grid__title grid__title_big">Streetster Bakerstreet</h3>
               <p class="grid__subtitle">Скорость, соединенная с удобством</p>
             </div>
-            <img data-speed="4" src="img/selectedItems_main_bg.png" alt="img">
+            <img data-speed="4" src="img/selectedItems_main_bg.png" alt="Streetster Bakerstreet">
           </a>
         </li>
         <li class="grid__item grid__item_small">
           <a href="#" class="grid__link">
-            <img data-speed="4" src="img/selectedItems_helmet_bg.png" alt="img">
+            <img data-speed="4" src="img/selectedItems_helmet_bg.png" alt="Шлем Octane">
             <h3 class="grid__title">Шлем Octane</h3>
           </a>
         </li>
         <li class="grid__item grid__item_small">
           <a href="#" class="grid__link">
-            <img data-speed="4" src="img/selectedItems_protection_bg.png" alt="img">
+            <img data-speed="4" src="img/selectedItems_protection_bg.png" alt="Защита canyon">
             <h3 class="grid__title">Защита canyon</h3>
           </a>
         </li>
         <li class="grid__item grid__item_small">
           <a href="#" class="grid__link">
-            <img data-speed="4" src="img/selectedItems_helmet_bg.png" alt="img">
-            <h3 class="grid__title">защита canyon</h3>
+            <img data-speed="4" src="img/selectedItems_helmet_bg.png" alt="Защита canyon">
+            <h3 class="grid__title">Защита canyon</h3>
           </a>
         </li>
         <li class="grid__item grid__item_small">
           <a href="#" class="grid__link">
-            <img data-speed="4" src="img/selectedItems_protection_bg.png" alt="img">
-            <h3 class="grid__title">шлем octane</h3>
+            <img data-speed="4" src="img/selectedItems_protection_bg.png" alt="Шлем Octane">
+            <h3 class="grid__title">Шлем Octane</h3>
           </a>
         </li>
       </ul>
@@ -312,18 +321,20 @@
         <div class="top-nav__logo logo">
           <a class="logo__link" href="#"><img width="150px" src="img/logo/logo.webp" alt="logo"></a>
         </div>
-        <nav class="menu__list">
-          <h5 class="footer__menu-title">Категории</h5>
-          <li class="menu__item"><a class="menu__link" href="#">Road series</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Street series</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Mountain series</a></li>
-        </nav>
-        <nav class="menu__nav nav">
-          <h5 class="footer__menu-title">Информация</h5>
-          <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-        </nav>
+        <div class="footer__nav">
+          <nav class="menu__list">
+            <h5 class="footer__menu-title">Категории</h5>
+            <li class="menu__item"><a class="menu__link" href="#">Road series</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Street series</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Mountain series</a></li>
+          </nav>
+          <nav class="menu__nav nav">
+            <h5 class="footer__menu-title">Информация</h5>
+            <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+          </nav>
+        </div>
         <ul class="menu__socials socials">
           <li class="socials__item"><a class="socials__link" href="#"><img width="30px" height="30px"
                 src="img/icons/inst_logo.svg" alt="instagram"></a>
