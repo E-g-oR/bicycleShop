@@ -1,0 +1,225 @@
+.header {
+   background-image: url(../img/offroad__hero_bg.jpg);
+}
+.header__offer {
+}
+.offer {
+   margin-top: 190px;
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 100%;
+   align-items: center;
+}
+.offer__img {
+   background-image: url(../img/category__hero_offer.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: contain;
+   padding: 70px 0;
+   margin-right: 15px;
+   flex: 1 1 auto;
+   & img {
+      width: 95%;
+   }
+}
+.offer__text {
+   max-width: 500px;
+}
+.offer__title {
+   text-transform: uppercase;
+   margin-bottom: 35px;
+}
+.offer__paragraph {
+   margin-bottom: 20px;
+}
+// ! PRODUCT SECTION ========================
+.product {
+   background-color: #fff;
+   border-bottom: 1px solid #111;
+   display: flex;
+}
+.section {
+}
+.product__about {
+   background-color: rgb(225, 224, 224);
+   padding: 50px;
+   max-width: 420px;
+}
+.product__description {
+}
+.description {
+}
+.description__title {
+   text-transform: uppercase;
+   font-size: 35px;
+   margin-bottom: 10px;
+}
+.description__price {
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 22px;
+   margin-bottom: 20px;
+}
+.description__paragraph {
+   margin-bottom: 13px;
+}
+.description__color {
+}
+.color {
+}
+.color__title {
+   font-weight: 700;
+   // font-size: 20px;
+   margin-bottom: 10px;
+}
+.color__list {
+}
+
+// ? =========================
+
+// обертка radio, элемент label
+.radio {
+   position: relative;
+   cursor: pointer;
+}
+
+// непосредственно input
+.radio__input {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   &:checked {
+      & + .radio__styled {
+         // border: 2px solid #000;
+         border-color: #000;
+         box-shadow: 0 0 0 1px #000;
+      }
+   }
+   &:focus {
+      & + .radio__styled {
+         // border: 2px solid #000;
+         // border-color: #000;
+         box-shadow: 0 0 0 1.5px #000;
+      }
+   }
+}
+
+// span стилизованный
+.radio__styled {
+   transition: 0.17s;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   border: 1px solid rgb(107, 107, 107);
+   border-radius: 50px;
+   padding: 2px;
+   &::before {
+      transition: 0.17s;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      border-radius: 50px;
+   }
+   &.radio__styled_black::before {
+      background-color: #000;
+   }
+   &.radio__styled_blue::before {
+      background-color: #49617b;
+   }
+   &.radio__styled_yellow::before {
+      background-color: #f6d013;
+   }
+   &.radio__styled_white::before {
+      background-color: #fff;
+   }
+   &.radio__styled_red::before {
+      background-color: #ff3939;
+   }
+}
+
+// текст, подпись для input
+.radio__label {
+   padding-left: 27px;
+   margin-right: 5px;
+   overflow: hidden;
+   width: 1px;
+   display: inline-block;
+
+   // visibility: hidden;
+}
+
+// ? =========================
+
+.description__button {
+   margin-top: 13px;
+   display: block;
+   text-align: center;
+   background: transparent;
+}
+// .button {
+// }
+// .button_outline {
+// }
+.product__slider {
+}
+// ! PRODUCT SECTION END ========================
+
+// ? SLIDER ============================
+.product__view {
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.product__slider {
+   max-width: 1000px;
+   overflow: hidden;
+}
+.slider {
+}
+.swiper-wrapper {
+}
+.slider__wrapper {
+}
+.swiper-slide {
+}
+.slider__slide {
+   // background-color: rgb(87, 29, 29);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+.swiper-button-next::before,
+.swiper-button-prev::before {
+   // display: none;
+   width: 200px;
+   height: 600%;
+   background: transparent;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+   color: #000 !important;
+}
+.swiper-pagination {
+}
+.slider__pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-pagination-bullet {
+   width: 20px;
+   height: 5px;
+   border-radius: 0%;
+}
+.swiper-pagination-bullet-active {
+   background-color: #000;
+}
+// ? SLIDER END ============================
