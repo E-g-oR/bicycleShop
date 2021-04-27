@@ -40,8 +40,8 @@ body {
   -webkit-transition: 1s;
   transition: 1s;
   background-size: cover;
-  -webkit-transform: translateZ(-1px) scale(2.02);
-          transform: translateZ(-1px) scale(2.02);
+  -webkit-transform: translateZ(-1px) scale(2.08);
+          transform: translateZ(-1px) scale(2.08);
 }
 
 .offer {
@@ -232,7 +232,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .swiper-button-next::before,
@@ -255,4 +255,73 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #000;
+}
+
+@media screen and (max-width: 1250px) {
+  .slider__slide img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .offer__img {
+    margin: 0;
+  }
+  .offer__img img {
+    width: 100%;
+    max-width: 620px;
+  }
+  .product__about {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .slider__slide img {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 35px;
+  }
+  .product__about {
+    max-width: 100%;
+  }
+  .description__button {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+  }
+  .slider__slide img {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1000px) and (orientation: portrait) {
+  .header::before {
+    -webkit-transform: translateZ(-0.5px) scale(2.08);
+            transform: translateZ(-0.5px) scale(2.08);
+  }
 }

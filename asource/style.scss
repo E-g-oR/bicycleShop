@@ -529,10 +529,34 @@ body {
         font-weight: 100;
     }
     .top-nav__controls {
-        padding: 20px;
+        padding: 10px 15px;
+    }
+    .menu {
+        top: 60px;
     }
     .menu__link {
         font-size: 16px;
+        padding: 5px 0;
+        margin: 2px 0;
+    }
+    .nav__item {
+        padding: 0;
+        margin: 0;
+    }
+    .nav__link {
+        // font-size: 16px;
+        padding: 5px 0;
+        margin: 2px 0;
+    }
+    .menu__link,
+    .nav__link {
+        display: block;
+    }
+    .menu__nav {
+        margin-bottom: 10px;
+    }
+    .socials {
+        margin: 10px 20px;
     }
     .category {
         transform: none;
