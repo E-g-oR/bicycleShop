@@ -22,14 +22,14 @@
   <!-- og:description - описание страницы. 
           Можете скопировать из тега description для страницы, 
           на которую добавляете теги. -->
-  <meta property="og:image" content="img/hero_bg.webp">
+  <meta property="og:image" content="img\hero_bg.jpg">
   <!-- og:image - ссылка на картинку, что характеризует страницу. 
           Можете указать ссылку на лого сайта, или нарисовать 
           конкретную картинку для этих целей. -->
   <meta name="description"
     content="Streester Nathan | Интернет-магазин велосипедов и запчастей. Городские, гоночные и горные велосипеды.">
 
-  <meta http-equiv="Cache-Control" content="public, max-age=3000">
+  <meta http-equiv="Cache-Control" content="public, max-age=250000">
 
   <link rel="shortcut icon" href="img/logo/logo.webp" type="image/x-icon">
   <link rel="icon" href="img/logo/logo.webp" type="image/x-icon">
@@ -38,10 +38,15 @@
 
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="css/footer.css" />
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+
+  <script src="swiper/swiper-bundle.min.js"></script>
+
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
   <script src="js/script.js" defer></script>
 </head>
 
@@ -85,7 +90,7 @@
             <menu class="menu__list">
               <li class="menu__item"><a class="menu__link" href="#">Road series</a></li>
               <li class="menu__item"><a class="menu__link" href="#">Street series</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Mountain series</a></li>
+              <li class="menu__item"><a class="menu__link" href="offroad.html">Offroad series</a></li>
             </menu>
             <nav class="menu__nav nav">
               <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
@@ -128,7 +133,7 @@
         <div class="categories-slider__wrapper swiper-wrapper">
           <!-- Slides -->
           <div class="categories-slider__slide category swiper-slide">
-            <a class="category__link" href="#">
+            <a class="category__link" href="offroad.html">
               <div class="category__content">
                 <picture>
                   <source srcset="img/bike_offroad.webp" type="image/webp" media="(min-width:750px)" width="380px">

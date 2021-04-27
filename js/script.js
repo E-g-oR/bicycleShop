@@ -50,18 +50,18 @@ const swiper = new Swiper('.swiper-container', {
    // }
 });
 
-function checkArrow() {
-   var swiperPrev = document.querySelector('.swiper-button-prev');
-   var swiperNext = document.querySelector('.swiper-button-next');
-   if (window.innerWidth > 730) {
-      console.log('Success', window.innerWidth);
-      swiperPrev.style.display = 'flex';
-      swiperNext.style.display = 'flex';
-   } else {
-      swiperPrev.style.display = 'none';
-      swiperNext.style.display = 'none';
-   }
-};
+// function checkArrow() {
+//    var swiperPrev = document.querySelector('.swiper-button-prev');
+//    var swiperNext = document.querySelector('.swiper-button-next');
+//    if (window.innerWidth > 730) {
+//       console.log('Success', window.innerWidth);
+//       swiperPrev.style.display = 'flex';
+//       swiperNext.style.display = 'flex';
+//    } else {
+//       swiperPrev.style.display = 'none';
+//       swiperNext.style.display = 'none';
+//    }
+// };
 const hamburgerMenu = document.querySelector('.hamburger-menu'),
    switchLanguage = document.querySelector('.switch-language'),
    buttons = document.querySelector('.buttons'),

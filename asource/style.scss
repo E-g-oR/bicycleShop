@@ -1,3 +1,20 @@
+@font-face {
+    font-display: swap;
+    font-family: "Lato";
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+    src: local("Lato"), local("Lato"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-display: swap;
+    font-family: "Lato";
+    src: url("../fonts/Lato/Lato-Light.ttf");
+    src: local("Lato"), local("Lato"), url("../fonts/Lato/Lato-Light.ttf") format("truetype");
+    font-weight: light;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +44,7 @@ button {
 }
 body {
     color: #000;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Roboto", sans-serif;
     font-size: 17px;
     overflow-x: hidden;
     font-family: sans-serif;
@@ -118,7 +135,7 @@ body {
     }
 }
 .category {
-    transform: skewX(-25deg);
+    transform: skewX(155deg);
     overflow: hidden;
     display: flex;
 }
@@ -433,7 +450,7 @@ body {
     }
     .menu__nav,
     .menu__list {
-        width: 180px;
+        width: 200px;
     }
     .nav {
         & .footer__menu-title {
@@ -506,7 +523,7 @@ body {
         font-size: 28px;
     }
 }
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 520px) {
     .language-control {
         font-size: 18px;
         font-weight: 100;
@@ -551,6 +568,12 @@ body {
     }
     .advantages-list__item {
         margin: 100px auto 20px;
+    }
+    .footer {
+        .menu__nav,
+        .menu__list {
+            width: 180px;
+        }
     }
 }
 
