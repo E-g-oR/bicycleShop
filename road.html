@@ -31,21 +31,15 @@
    <script src="js/script.js" defer></script>
    <script src="js/category.js" defer></script>
 
-   <style>
-      .header::before {
-         background-image: url(/img/webp/road__hero_bg.webp);
-         background-position: bottom;
-      }
-
-      .offer__img {
-         background-image: url(/img/webp/road__offer_bg.webp);
-      }
-   </style>
 
 </head>
 
 <body>
    <header class="header hero section">
+      <div class="header__bg">
+         <img src="/img/webp/road__hero_bg.webp" alt="">
+      </div>
+
       <div class="container">
          <!-- * top navigation bar -->
          <div class="header__top-nav top-nav">
@@ -109,10 +103,11 @@
 
          <div class="header__offer offer">
             <div class="offer__img">
-               <img src="img/bike_road.webp" alt="Streester Nathan Offroad Series">
+               <img class="offer__bg" src="img/webp/road__offer_bg.webp" alt="">
+               <img class="offer__bike" src="img/bike_road.webp" alt="Streester Nathan Offroad Series">
             </div>
             <div class="offer__text">
-               <h1 class="offer__title">Road Series</h1>
+               <h1 class="offer__title">Street Series</h1>
                <p class="offer__paragraph">Внезапно, тщательные исследования конкурентов призывают нас к новым
                   свершениям, которые, в свою очередь, должны быть
                   ограничены исключительно образом мышления.</p>
