@@ -37,7 +37,7 @@
 <body>
    <header class="header hero section">
       <div class="header__bg">
-         <img src="/img/webp/road__hero_bg.webp" alt="">
+         <img src="/img/road__hero_bg.webp" alt="">
       </div>
 
       <div class="container">
@@ -103,11 +103,23 @@
 
          <div class="header__offer offer">
             <div class="offer__img">
-               <img class="offer__bg" src="img/webp/road__offer_bg.webp" alt="">
-               <img class="offer__bike" src="img/bike_road.webp" alt="Streester Nathan Offroad Series">
+               <img class="offer__bg" src="img/road__offer_bg.webp" alt="">
+               <!-- <img class="offer__bike" src="img/bike_road_1.webp" alt="Streester Nathan Offroad Series"> -->
+               <picture>
+                  <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                     height="338px">
+                  <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                     height="283px">
+                  <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:470px)" width="421px"
+                     height="233px">
+                  <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:370px)">
+
+                  <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                     alt="Streester Nathan Offroad Series">
+               </picture>
             </div>
             <div class="offer__text">
-               <h1 class="offer__title">Street Series</h1>
+               <h1 class="offer__title">Road Series</h1>
                <p class="offer__paragraph">Внезапно, тщательные исследования конкурентов призывают нас к новым
                   свершениям, которые, в свою очередь, должны быть
                   ограничены исключительно образом мышления.</p>
@@ -134,18 +146,18 @@
                <p class="color__title">Доступно в цветах:</p>
                <div class="color__list">
                   <label class="radio">
-                     <input class="radio__input radio__input_black" type="radio" name="color" id="" value="Черный"
-                        checked>
+                     <input class="radio__input radio__input_black" type="radio" name="color_Nathan" id=""
+                        value="Черный" checked>
                      <span class="radio__styled radio__styled_black"></span>
                      <span class="radio__label">Черный</span>
                   </label>
                   <label class="radio">
-                     <input class="radio__input" type="radio" name="color" id="" value="Синий">
+                     <input class="radio__input" type="radio" name="color_Nathan" id="" value="Синий">
                      <span class="radio__styled radio__styled_blue"></span>
                      <span class="radio__label">Синий</span>
                   </label>
                   <label class="radio">
-                     <input class="radio__input" type="radio" name="color" id="" value="Кораловый">
+                     <input class="radio__input" type="radio" name="color_Nathan" id="" value="Кораловый">
                      <span class="radio__styled radio__styled_red"></span>
                      <span class="radio__label">Кораловый</span>
                   </label>
@@ -162,22 +174,83 @@
             <div class="swiper-wrapper slider__wrapper">
                <!--* Slides -->
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_offroad.webp" width="700px" alt="bike offroad Streester Nathan">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_offroad.webp" width="700px" alt="bike offroad Streester Nathan">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_offroad.webp" width="700px" alt="bike offroad Streester Nathan">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_offroad.webp" width="700px" alt="bike offroad Streester Nathan">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_offroad.webp" width="700px" alt="bike offroad Streester Nathan">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_offroad.webp" width="700px" alt="bike offroad Streester Nathan">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
 
             </div>
@@ -209,13 +282,13 @@
                <p class="color__title">Доступно в цветах:</p>
                <div class="color__list">
                   <label class="radio">
-                     <input class="radio__input" type="radio" name="color" id="" value="Синий">
+                     <input class="radio__input" type="radio" name="color_Bakerstreet" id="" value="Синий">
                      <span class="radio__styled radio__styled_blue"></span>
                      <span class="radio__label">Синий</span>
                   </label>
                   <label class="radio">
-                     <input class="radio__input" type="radio" name="color" id="" value="Белый">
-                     <span class="radio__styled radio__styled_red"></span>
+                     <input class="radio__input" type="radio" name="color_Bakerstreet" id="" value="Белый" checked>
+                     <span class="radio__styled radio__styled_white"></span>
                      <span class="radio__label">Белый</span>
                   </label>
                </div>
@@ -231,22 +304,82 @@
             <div class="swiper-wrapper slider__wrapper">
                <!--* Slides -->
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Backerstreet.webp" width="700px" alt="bike offroad Streester Bakerstreet">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Backerstreet.webp" width="700px" alt="bike offroad Streester Bakerstreet">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Backerstreet.webp" width="700px" alt="bike offroad Streester Bakerstreet">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Backerstreet.webp" width="700px" alt="bike offroad Streester Bakerstreet">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Backerstreet.webp" width="700px" alt="bike offroad Streester Bakerstreet">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Backerstreet.webp" width="700px" alt="bike offroad Streester Bakerstreet">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
 
             </div>
@@ -278,12 +411,12 @@
                <p class="color__title">Доступно в цветах:</p>
                <div class="color__list">
                   <label class="radio">
-                     <input class="radio__input" type="radio" name="color" id="" value="Желтый">
+                     <input class="radio__input" type="radio" name="color_Broadway" id="" value="Желтый" checked>
                      <span class="radio__styled radio__styled_yellow"></span>
                      <span class="radio__label">Желтый</span>
                   </label>
                   <label class="radio">
-                     <input class="radio__input" type="radio" name="color" id="" value="Коралловый">
+                     <input class="radio__input" type="radio" name="color_Broadway" id="" value="Коралловый">
                      <span class="radio__styled radio__styled_red"></span>
                      <span class="radio__label">Коралловый</span>
                   </label>
@@ -300,22 +433,82 @@
             <div class="swiper-wrapper slider__wrapper">
                <!--* Slides -->
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Broadway.webp" width="700px" alt="bike offroad Streester Broadway">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Broadway.webp" width="700px" alt="bike offroad Streester Broadway">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Broadway.webp" width="700px" alt="bike offroad Streester Broadway">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Broadway.webp" width="700px" alt="bike offroad Streester Broadway">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Broadway.webp" width="700px" alt="bike offroad Streester Broadway">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
                <div class="swiper-slide slider__slide">
-                  <img src="img/bike_Broadway.webp" width="700px" alt="bike offroad Streester Broadway">
+                  <picture>
+                     <source srcset="img/bike_road_3x.webp" type="image/webp" media="(min-width:1170px)" width="610px"
+                        height="338px">
+                     <source srcset="img/bike_road_2x.webp" type="image/webp" media="(min-width:970px)" width="510px"
+                        height="283px">
+                     <source srcset="img/bike_road_1.webp" type="image/webp" media="(min-width:400px)" width="420px"
+                        height="230px">
+                     <source srcset="img/bike_road_1x.webp" type="image/webp" media="(min-width:320px)" width="280px">
+                     <img class="offer__bike" width="610px" height="338px" src="img/bike_road_3x.webp"
+                        alt="Streester Nathan Offroad Series">
+                  </picture>
                </div>
 
             </div>
