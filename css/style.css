@@ -565,6 +565,12 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+  .logo__link {
+    padding-top: 2px;
+  }
+  .top-nav {
+    padding-top: 15px;
+  }
   .language-control {
     font-size: 18px;
     font-weight: 100;

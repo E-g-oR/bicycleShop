@@ -57,7 +57,16 @@
       <!-- * top navigation bar -->
       <div class="header__top-nav top-nav">
         <div class="top-nav__logo logo">
-          <a class="logo__link" href="#"><img max-width="150px" width="100%" src="img/logo/logo.webp" alt="logo"></a>
+          <a class="logo__link" href="#">
+            <!-- <img max-width="150px" width="100%" src="img/logo/logo_2x.webp" alt="logo"> -->
+            <picture>
+              <source srcset="img/logo/logo.webp" type="image/webp" media="(min-width:750px)" width="150px"
+                height="50px">
+              <source srcset="img/logo/logo_small.webp" type="image/webp" media="(max-width:400px)" width="100px"
+                height="35px">
+              <img width="150px" height="50px" src="img/logo/logo.webp" alt="logo">
+            </picture>
+          </a>
         </div>
         <form class="top-nav__form search-form" action="#">
           <input class="search-form__input" type="text" id="search">
