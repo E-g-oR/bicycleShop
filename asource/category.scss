@@ -1,42 +1,3 @@
-html {
-   height: 100%;
-   overflow: hidden;
-}
-body {
-   perspective: 1px;
-   transform-style: preserve-3d;
-   height: 100%;
-   overflow-y: scroll;
-   overflow-x: hidden;
-}
-
-.header {
-   box-sizing: border-box;
-   background: transparent;
-   transform-style: inherit;
-   position: relative;
-   overflow: hidden;
-   & .header__bg img {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #161616;
-      background-image: url(../img/offroad__hero_bg.jpg);
-      background-position: center;
-      z-index: -1;
-      transform-origin: center;
-      // transition: 1s;
-      background-size: cover;
-      object-fit: cover;
-      transform: translateZ(-1px) scale(2.08);
-   }
-}
 .header__offer {
 }
 .offer {
@@ -114,6 +75,7 @@ body {
    margin-bottom: 10px;
 }
 .color__list {
+   margin-bottom: 25px;
 }
 
 // ? =========================

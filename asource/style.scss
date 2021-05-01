@@ -42,7 +42,16 @@ button {
     text-transform: uppercase;
     font-weight: 700;
 }
+html {
+    height: 100%;
+    overflow: hidden;
+}
 body {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
     color: #000;
     font-family: "Lato", "Roboto", sans-serif;
     font-size: 17px;
@@ -65,10 +74,10 @@ body {
     transition: 0.2s;
 }
 .button_solid {
-    color: #f2f2f2;
-    background-color: #000;
+    background-color: #f2f2f2;
+    color: #000;
     &:hover {
-        background-color: #0f0f0f;
+        background-color: #c9c9c9;
     }
 }
 .button_outline {
@@ -85,13 +94,41 @@ body {
     max-width: 2000px;
     margin: 0 auto;
 }
+// .header {
+//     background-image: url(../img/hero_bg.webp);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
 .header {
-    background-color: #5b6169;
-    background-image: url(../img/hero_bg.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     color: #fff;
+    background-color: #212326;
+    box-sizing: border-box;
+    background: transparent;
+    transform-style: inherit;
+    position: relative;
+    overflow: hidden;
+    & .header__bg img {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #161616;
+        background-image: url(../img/offroad__hero_bg.jpg);
+        background-position: center;
+        z-index: -1;
+        transform-origin: center;
+        filter: brightness(0.8);
+        // transition: 1s;
+        background-size: cover;
+        object-fit: cover;
+        transform: translateZ(-1px) scale(2.08);
+    }
 }
 // .header__body {
 //     // padding-top: 300px;
@@ -99,9 +136,9 @@ body {
 // .header__offer {
 // }
 .offer {
-    margin-top: 300px;
+    margin-top: 430px;
     max-width: 1000px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
 }
 .offer__caption {
     font-weight: 300;
