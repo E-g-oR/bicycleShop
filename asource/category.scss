@@ -1,6 +1,6 @@
 html {
    height: 100%;
-   overflow: hidden;
+   // overflow: hidden;
 }
 body {
    perspective: 1px;
@@ -30,7 +30,7 @@ body {
       background-image: url(../img/offroad__hero_bg.jpg);
       z-index: -1;
       transform-origin: center;
-      transition: 1s;
+      // transition: 1s;
       background-size: cover;
       object-fit: cover;
       transform: translateZ(-1px) scale(2.08);

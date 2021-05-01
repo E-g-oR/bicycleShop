@@ -13,3 +13,4 @@ const categorySwiper = new Swiper('.product__slider', {
       prevEl: '.swiper-button-prev',
    }
 });
+var rellax = new Rellax(".header__bg_img");
